@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Michał Markiewicz">
+    <title>Vanilla JS Form Validation</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="form-container">
+
+            <form action="" id="contact-form">
+
+                    <h2>Contact form</h2>
+
+                    <p style="color: #3d3d3d; font-weight: 300;">This script does basic form validation using Vanilla JS and logs values into console. </p>
+
+                    <div class="input-container">
+                        <label for="name">Full name</label>
+                        <input type="text" id="name" name="Name" placeholder="Your name...">
+                        <div class="error-message"></div>
+                    </div>
+
+
+                    <div class="input-container">
+                        <label for="phone">Phone</label>
+                        <input type="text" id="phone" name="Phone" placeholder="Your phone...">
+                        <div class="error-message"></div>
+                    </div>
+
+                    <div class="input-container">
+                        <label for="email">Email</label>
+                        <input type="text" id="email" name="Email" placeholder="Your email...">
+                        <div class="error-message"></div>
+                    </div>
+
+                    <div class="input-container">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="Message" cols="30" rows="10" placeholder="Your message..."></textarea>
+                        <div class="error-message"></div>
+                    </div>
+                        <input type="submit" value="Submit" id="submit">
+
+            </form>
+        </div>
+
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
